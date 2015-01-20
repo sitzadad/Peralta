@@ -1,0 +1,13 @@
+@mixin iconHover(){
+  &:hover{
+    color:$whiteText;
+    box-shadow: 0 2px $whiteText;
+  }
+}
+@mixin iconHoverDark($color){
+  &:hover{
+    background-color:$color;
+    color:$whiteText;
+    
+  }
+}

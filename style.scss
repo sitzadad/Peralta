@@ -1,0 +1,506 @@
+@import '_variables';
+@import '_mixins';
+/*********************
+SMALL=FixedWidth@320px
+*********************/
+body{
+  margin:0;
+  background:linear-gradient($darkTint,$darkTint),$bodyBG;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.levelContainer{
+  width:100%;
+}
+.underBorder{
+  box-shadow: 0 2px 0 $underBorderColor;
+}
+.styleIcon{
+  width:40px;
+  text-align:center;
+  padding:8px 0;
+  text-decoration:none;
+  color:$iconWhite;
+}
+.styleIconDark{
+  width:28px;
+  text-align:center;
+  padding:4px 0;
+  text-decoration:none;
+  color:rgb(156, 156, 156)
+}
+.ulWIPE{
+  padding:0;
+  margin:auto;
+  list-style-type:none;
+  width:50%;
+}
+.aWIPE{
+  text-decoration:none;
+  color:$whiteText;
+  font-family:$fontMain;
+}
+.textPop{
+  transform:scale(1.1,1.1);
+}
+header.levelContainer{
+  margin-top:4px;
+  ul.ulWIPE{
+    position:relative;
+    display:block;
+    text-align:right;
+    li{
+      display:inline-block;
+      color:$whiteText;
+      font-size:1.5rem;
+      position:relative;
+    }
+    li:nth-child(1){
+      font-size:0.8rem;
+      position:relative;
+      bottom:4px;
+      padding-right:10px;
+      a{
+        @extend.aWIPE;
+      }
+    }
+    li:nth-child(1):hover{
+      @extend.textPop;
+    }
+    li:nth-child(2){
+      font-size:1.3rem;
+      padding-right:50px;
+    }
+    li:nth-child(3){
+      transform:rotate(-90deg);
+      font-size:1.3rem;
+    }
+  }
+  .fa.fa-facebook{
+    background-color:$facebook;
+    @extend.underBorder;
+    @extend.styleIcon;
+    @include iconHover;
+  }
+  .fa.fa-rss{
+    background-color:$rss;
+    @extend.underBorder;
+    @extend.styleIcon;
+    @include iconHover;
+  }
+  .fa.fa-twitter{
+    background-color:$twitter;
+    @extend.underBorder;
+    @extend.styleIcon;
+    @include iconHover;
+  }
+  .fa.fa-youtube{
+    background-color:$youTube;
+    @extend.underBorder;
+    @extend.styleIcon;
+    @include iconHover;
+  }
+}
+/***********************************************/
+nav.levelContainer{
+  margin-top:15px;
+  ul.ulWIPE{
+    text-align:center;
+    li{
+      display:inline;
+
+      a{
+        @extend.styleIcon;
+        @extend.aWIPE;
+        @extend.underBorder;
+        @include iconHover;
+        display:inline-block;
+        width:24.4%;
+        background-color:$navColor;
+        font-size:0.75rem;
+      }
+    }
+  }
+}
+/***********************************************/
+section.levelContainer:nth-child(3){
+  margin-top:15px;
+}
+#topImageWrapper{
+  @extend.underBorder;
+  background:linear-gradient($lessDarkTint,$lessDarkTint),url("grid.png"),url("top-image.png");
+  background-size:100%,175%,162%;
+  background-position:0% 0%,0% 0%,42% 27%;
+  @extend.ulWIPE;
+  height:270px;
+  border:8px solid $whiteText;
+  box-sizing: border-box;
+  position:relative;
+}
+#logo{
+  background-image:url("peralta-logo.png");
+  background-size:40%;
+  position:relative;
+  left:5%;
+  top:20%;
+  height:165px;
+  background-repeat:no-repeat;
+}
+/************************************************/
+section.levelContainer:nth-child(4){
+  margin-top:15px;
+  text-align:center;
+//  form{
+//    input[type="radio i"]{
+//      input[type="checkbox i"]{
+//        border-bottom:10px solid $underBorderColor;
+//        border-radius:30%;
+//        color:$navColor;
+//      }
+//    }
+//  }
+}
+/************************************************/
+section.levelContainer:nth-child(5){
+  margin-top:15px;
+  div.ulWIPE{
+    display:flex;
+    flex-flow:row;
+    height:270px;
+    article{
+      flex:auto;
+      box-sizing: border-box;
+      padding: /* 3.5% */ 0 2% 1%;
+      background-color:$whiteText;
+      color:$blackText;
+      text-align:center;
+      width:33%;
+      @extend.underBorder;
+      h3{
+        font-family:Arial;
+        font-weight:normal;
+        color:black;
+        margin:10px 0;
+        text-align:left;
+      }
+      span{
+        font-size:0.7rem;
+        color:$greyText;
+        text-align:left;
+        display:block;
+      }
+      p{
+        margin-top:10px;
+        font-size:0.8rem;
+        text-align:left;
+        margin-bottom:10px;
+      }
+      a{
+        color:$navColor;
+        text-decoration:none;
+        margin:auto;
+        display:block;
+      }
+      a:hover{
+        @extend.textPop;
+      }
+    }
+    article:nth-child(1){
+      order:1;
+
+      margin-right:3px;
+    }
+    article:nth-child(2){
+      order:2;
+      margin-right:3px;
+      margin-left:3px;
+    }
+    article:nth-child(3){
+      order:3;
+      margin-left:3px;
+      h3{
+        margin-bottom:32px;
+      }
+    }
+  }
+}
+/************************************************/
+section.levelContainer:nth-child(6){
+  margin-top:25px;
+  div.ulWIPE{
+    height:314px;
+    #leftContainer, #rightContainer{
+      a{
+      display:block;
+      border:4px solid $whiteText;
+      @extend.underBorder;
+      @extend.aWIPE;
+      font-weight:bold;
+      font-size:2rem;
+      text-align:center;
+      }
+    }
+  }
+}
+#leftContainer{
+width:66.6%;
+float:left;
+margin-right:6px;
+}
+#rightContainer{
+width:32.5%;
+float:left;
+height:314px;
+}
+#pic1{
+ width:49.3%;
+ height:150px;
+ float:left;
+ box-sizing: border-box;
+ margin-right:6px;
+ margin-bottom:8px;
+ background:url("sk8er-4.png");
+ background-size:130%;
+ background-position:100% 50%;
+ padding-top:1em;
+}
+#pic2{
+  width:49.3%;
+  height:150px;
+  float:left;
+  box-sizing: border-box;
+  margin-bottom:4px;
+  background:url("sk8er-3.png");
+  background-size:120%;
+  background-position:0% 25%;
+  padding-top:1em;
+}
+#pic3{
+  width:100%;
+  height:150px;
+  float:left;
+  box-sizing: border-box;
+  margin-right:3px;
+  margin-bottom:6px;
+  background:url("sk8er-1.png");
+  background-size:104%;
+  background-position:0% 67%;
+  padding-top:1.5em;
+}
+#pic4{
+  height:98%;
+  box-sizing: border-box;
+  background:url("sk8er-2.png");
+  background-size:cover;
+  background-size:auto 100%;
+  background-position:80% 0%;
+  padding-top:3.5em;
+}
+/************************************************/
+section.levelContainer:nth-child(7){
+  margin-top:25px;
+  div.ulWIPE{
+    background-color:white;
+    display:flex;
+    padding: 0 0.4rem;
+    box-sizing: border-box;
+    @extend.underBorder;
+    img{
+      justify-content: space-around;
+      flex:auto;
+      margin:0.4rem;
+    }
+  }
+}
+/************************************************/
+section.levelContainer:nth-child(8){
+  margin:25px 0 75px 0;
+  div.ulWIPE{
+    @extend.underBorder;
+    background-color:white;
+    padding:1.5rem;
+    box-sizing: border-box;
+  }
+  .fa.fa-facebook{
+    background-color:rgb(78, 78, 78);
+    @extend.styleIconDark;
+    @include iconHoverDark($facebook);
+  }
+  .fa.fa-rss{
+    background-color:rgb(173, 173, 173);
+    @extend.styleIconDark;
+    @include iconHoverDark($rss);
+  }
+  .fa.fa-twitter{
+    background-color:rgb(123, 123, 123);
+    @extend.styleIconDark;
+    @include iconHoverDark($twitter);
+
+  }
+  .fa.fa-youtube{
+    background-color:rgb(116, 116, 116);
+    @extend.styleIconDark;
+    @include iconHoverDark($youTube);
+  }
+}
+#contactContainer{
+  display:inline-block;
+  width:55%;
+  h3{
+    margin:0 0 1rem 0;
+    font-family:$fontMain;
+    color:$blackText;
+    font-weight:normal;
+  }
+  p{
+    font-family:$fontMain;
+    color:$darkGreyText;
+    font-size:0.9rem;
+  }
+  ul.ulWIPE{
+    display:inline-block;
+    li{
+      display:inline-block;
+    }
+  }
+}
+#formContainer{
+  display:inline-block;
+  width:44%;
+  vertical-align:top;
+  padding-left:1rem;
+  box-sizing: border-box;
+  text-align:right;
+  form{
+    div{
+      padding-bottom:0.5rem;
+      input,textarea{
+        width:100%;
+        border-left:2.5px solid $underBorderColor;
+        border-top:2.5px solid $underBorderColor;
+        border-bottom:1px solid $underBorderColor;
+        border-right:1px solid $underBorderColor;
+      }
+      input:nth-child(3){
+        height:3rem
+      }
+      button{
+        background-color:$navColor;
+        color:$whiteText;
+        border:none;
+        padding:0.3rem 3rem;
+      }
+      button:hover{
+        @extend.textPop;
+      }
+    }
+  }
+}
+
+
+
+/* #pic1:hover,#pic2:hover,#pic3:hover,#pic4:hover{
+  @extend.textPop;
+} */
+
+/* IT WORKS! */
+/*     div.leftCenter,div.rightCenter{
+
+}
+div.leftCenter{
+  background-color:blue;
+  float:left;
+  width:66.6%;
+}
+  div.pic1,div.pic2,div.pic3,div.rightCenter{
+    float:left;
+
+    a{
+      width:100%;
+      height:100%;
+      box-sizing: border-box;
+      border:2px solid \$whiteText;
+      @extend.underBorder;
+      display:block;
+    }
+  }
+  div.pic1,div.pic2,div.pic3{
+    height:49%;
+  }
+  div.pic1{
+    width:49%;
+  }
+  div.pic2{
+    width:49%;
+  }
+  div.pic3{
+    margin-top:3px;
+    width:98%;
+  }
+div.rightCenter{
+  background-color:purple;
+  float:left;
+  width:33.3%;
+
+}
+  }
+} */
+  /* div{
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+    margin:auto;
+    div{
+      flex-flow:row;
+      flex:auto;
+      box-sizing:border-box;
+      height:350px;
+    }
+    div:nth-child(1){
+      order:1;
+      width:60%;
+      flex-wrap: wrap;
+      margin:0 0;
+      div{
+        flex-flow:row;
+        flex:50% 50%;
+        width:50%;override in 3rd child
+
+        background-color:white;
+      }
+      div:nth-child(1){
+        order:1;
+        margin-right:3px;
+        height:45%;
+      }
+      div:nth-child(2){
+        order:2;
+        height:50%;
+      }
+      div:nth-child(3){
+        margin-top:3px;
+        order:3;
+        flex: 50% 100%;
+      }
+    }
+    div:nth-child(2){
+      order:2;
+      width:40%;
+
+    }
+  }
+}*/
+
+
+
+/* justify-content: space-between; */
+
+
+
+/*****************************
+starts @ XXXpx
+*****************************/
+@media screen and (min-width:320px){
+
+}

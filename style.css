@@ -1,0 +1,420 @@
+/*********************
+SMALL=FixedWidth@320px
+*********************/
+body {
+  margin: 0;
+  background: linear-gradient(rgba(15, 15, 15, 0.5), rgba(15, 15, 15, 0.5)), url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.levelContainer {
+  width: 100%; }
+
+.underBorder, header.levelContainer .fa.fa-facebook, header.levelContainer .fa.fa-rss, header.levelContainer .fa.fa-twitter, header.levelContainer .fa.fa-youtube, nav.levelContainer ul.ulWIPE li a, nav.levelContainer ul#topImageWrapper li a, #topImageWrapper, section.levelContainer:nth-child(5) div.ulWIPE article, section.levelContainer:nth-child(5) div#topImageWrapper article, section.levelContainer:nth-child(6) div.ulWIPE #leftContainer a, section.levelContainer:nth-child(6) div#topImageWrapper #leftContainer a, section.levelContainer:nth-child(6) div.ulWIPE #rightContainer a, section.levelContainer:nth-child(6) div#topImageWrapper #rightContainer a, section.levelContainer:nth-child(7) div.ulWIPE, section.levelContainer:nth-child(8) div.ulWIPE {
+  box-shadow: 0 2px 0 #8F9190; }
+
+.styleIcon, header.levelContainer .fa.fa-facebook, header.levelContainer .fa.fa-rss, header.levelContainer .fa.fa-twitter, header.levelContainer .fa.fa-youtube, nav.levelContainer ul.ulWIPE li a, nav.levelContainer ul#topImageWrapper li a {
+  width: 40px;
+  text-align: center;
+  padding: 8px 0;
+  text-decoration: none;
+  color: rgba(188, 184, 181, 0.6); }
+
+.styleIconDark, section.levelContainer:nth-child(8) .fa.fa-facebook, section.levelContainer:nth-child(8) .fa.fa-rss, section.levelContainer:nth-child(8) .fa.fa-twitter, section.levelContainer:nth-child(8) .fa.fa-youtube {
+  width: 28px;
+  text-align: center;
+  padding: 4px 0;
+  text-decoration: none;
+  color: #9c9c9c; }
+
+.ulWIPE, #topImageWrapper {
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
+  width: 50%; }
+
+.aWIPE, header.levelContainer ul.ulWIPE li:nth-child(1) a, header.levelContainer ul#topImageWrapper li:nth-child(1) a, nav.levelContainer ul.ulWIPE li a, nav.levelContainer ul#topImageWrapper li a, section.levelContainer:nth-child(6) div.ulWIPE #leftContainer a, section.levelContainer:nth-child(6) div#topImageWrapper #leftContainer a, section.levelContainer:nth-child(6) div.ulWIPE #rightContainer a, section.levelContainer:nth-child(6) div#topImageWrapper #rightContainer a {
+  text-decoration: none;
+  color: #fbfbfb;
+  font-family: Arial; }
+
+.textPop, header.levelContainer ul.ulWIPE li:nth-child(1):hover, header.levelContainer ul#topImageWrapper li:nth-child(1):hover, section.levelContainer:nth-child(5) div.ulWIPE article a:hover, section.levelContainer:nth-child(5) div#topImageWrapper article a:hover, #formContainer form div button:hover {
+  transform: scale(1.1, 1.1); }
+
+header.levelContainer {
+  margin-top: 4px; }
+  header.levelContainer ul.ulWIPE, header.levelContainer ul#topImageWrapper {
+    position: relative;
+    display: block;
+    text-align: right; }
+    header.levelContainer ul.ulWIPE li, header.levelContainer ul#topImageWrapper li {
+      display: inline-block;
+      color: #fbfbfb;
+      font-size: 1.5rem;
+      position: relative; }
+    header.levelContainer ul.ulWIPE li:nth-child(1), header.levelContainer ul#topImageWrapper li:nth-child(1) {
+      font-size: 0.8rem;
+      position: relative;
+      bottom: 4px;
+      padding-right: 10px; }
+    header.levelContainer ul.ulWIPE li:nth-child(2), header.levelContainer ul#topImageWrapper li:nth-child(2) {
+      font-size: 1.3rem;
+      padding-right: 50px; }
+    header.levelContainer ul.ulWIPE li:nth-child(3), header.levelContainer ul#topImageWrapper li:nth-child(3) {
+      transform: rotate(-90deg);
+      font-size: 1.3rem; }
+  header.levelContainer .fa.fa-facebook {
+    background-color: #445897; }
+    header.levelContainer .fa.fa-facebook:hover {
+      color: #fbfbfb;
+      box-shadow: 0 2px #fbfbfb; }
+  header.levelContainer .fa.fa-rss {
+    background-color: #CB8E31; }
+    header.levelContainer .fa.fa-rss:hover {
+      color: #fbfbfb;
+      box-shadow: 0 2px #fbfbfb; }
+  header.levelContainer .fa.fa-twitter {
+    background-color: #6A8DC7; }
+    header.levelContainer .fa.fa-twitter:hover {
+      color: #fbfbfb;
+      box-shadow: 0 2px #fbfbfb; }
+  header.levelContainer .fa.fa-youtube {
+    background-color: #B1372D; }
+    header.levelContainer .fa.fa-youtube:hover {
+      color: #fbfbfb;
+      box-shadow: 0 2px #fbfbfb; }
+
+/***********************************************/
+nav.levelContainer {
+  margin-top: 15px; }
+  nav.levelContainer ul.ulWIPE, nav.levelContainer ul#topImageWrapper {
+    text-align: center; }
+    nav.levelContainer ul.ulWIPE li, nav.levelContainer ul#topImageWrapper li {
+      display: inline; }
+      nav.levelContainer ul.ulWIPE li a, nav.levelContainer ul#topImageWrapper li a {
+        display: inline-block;
+        width: 24.4%;
+        background-color: #b4292e;
+        font-size: 0.75rem; }
+        nav.levelContainer ul.ulWIPE li a:hover, nav.levelContainer ul#topImageWrapper li a:hover {
+          color: #fbfbfb;
+          box-shadow: 0 2px #fbfbfb; }
+
+/***********************************************/
+section.levelContainer:nth-child(3) {
+  margin-top: 15px; }
+
+#topImageWrapper {
+  background: linear-gradient(rgba(70, 70, 70, 0.5), rgba(70, 70, 70, 0.5)), url("grid.png"), url("top-image.png");
+  background-size: 100%, 175%, 162%;
+  background-position: 0% 0%, 0% 0%, 42% 27%;
+  height: 270px;
+  border: 8px solid #fbfbfb;
+  box-sizing: border-box;
+  position: relative; }
+
+#logo {
+  background-image: url("peralta-logo.png");
+  background-size: 40%;
+  position: relative;
+  left: 5%;
+  top: 20%;
+  height: 165px;
+  background-repeat: no-repeat; }
+
+/************************************************/
+section.levelContainer:nth-child(4) {
+  margin-top: 15px;
+  text-align: center; }
+
+/************************************************/
+section.levelContainer:nth-child(5) {
+  margin-top: 15px; }
+  section.levelContainer:nth-child(5) div.ulWIPE, section.levelContainer:nth-child(5) div#topImageWrapper {
+    display: flex;
+    flex-flow: row;
+    height: 270px; }
+    section.levelContainer:nth-child(5) div.ulWIPE article, section.levelContainer:nth-child(5) div#topImageWrapper article {
+      flex: auto;
+      box-sizing: border-box;
+      padding: 0 2% 1%;
+      background-color: #fbfbfb;
+      color: #4a4b46;
+      text-align: center;
+      width: 33%; }
+      section.levelContainer:nth-child(5) div.ulWIPE article h3, section.levelContainer:nth-child(5) div#topImageWrapper article h3 {
+        font-family: Arial;
+        font-weight: normal;
+        color: black;
+        margin: 10px 0;
+        text-align: left; }
+      section.levelContainer:nth-child(5) div.ulWIPE article span, section.levelContainer:nth-child(5) div#topImageWrapper article span {
+        font-size: 0.7rem;
+        color: #d2d2d2;
+        text-align: left;
+        display: block; }
+      section.levelContainer:nth-child(5) div.ulWIPE article p, section.levelContainer:nth-child(5) div#topImageWrapper article p {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        text-align: left;
+        margin-bottom: 10px; }
+      section.levelContainer:nth-child(5) div.ulWIPE article a, section.levelContainer:nth-child(5) div#topImageWrapper article a {
+        color: #b4292e;
+        text-decoration: none;
+        margin: auto;
+        display: block; }
+    section.levelContainer:nth-child(5) div.ulWIPE article:nth-child(1), section.levelContainer:nth-child(5) div#topImageWrapper article:nth-child(1) {
+      order: 1;
+      margin-right: 3px; }
+    section.levelContainer:nth-child(5) div.ulWIPE article:nth-child(2), section.levelContainer:nth-child(5) div#topImageWrapper article:nth-child(2) {
+      order: 2;
+      margin-right: 3px;
+      margin-left: 3px; }
+    section.levelContainer:nth-child(5) div.ulWIPE article:nth-child(3), section.levelContainer:nth-child(5) div#topImageWrapper article:nth-child(3) {
+      order: 3;
+      margin-left: 3px; }
+      section.levelContainer:nth-child(5) div.ulWIPE article:nth-child(3) h3, section.levelContainer:nth-child(5) div#topImageWrapper article:nth-child(3) h3 {
+        margin-bottom: 32px; }
+
+/************************************************/
+section.levelContainer:nth-child(6) {
+  margin-top: 25px; }
+  section.levelContainer:nth-child(6) div.ulWIPE, section.levelContainer:nth-child(6) div#topImageWrapper {
+    height: 314px; }
+    section.levelContainer:nth-child(6) div.ulWIPE #leftContainer a, section.levelContainer:nth-child(6) div#topImageWrapper #leftContainer a, section.levelContainer:nth-child(6) div.ulWIPE #rightContainer a, section.levelContainer:nth-child(6) div#topImageWrapper #rightContainer a {
+      display: block;
+      border: 4px solid #fbfbfb;
+      font-weight: bold;
+      font-size: 2rem;
+      text-align: center; }
+
+#leftContainer {
+  width: 66.6%;
+  float: left;
+  margin-right: 6px; }
+
+#rightContainer {
+  width: 32.5%;
+  float: left;
+  height: 314px; }
+
+#pic1 {
+  width: 49.3%;
+  height: 150px;
+  float: left;
+  box-sizing: border-box;
+  margin-right: 6px;
+  margin-bottom: 8px;
+  background: url("sk8er-4.png");
+  background-size: 130%;
+  background-position: 100% 50%;
+  padding-top: 1em; }
+
+#pic2 {
+  width: 49.3%;
+  height: 150px;
+  float: left;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+  background: url("sk8er-3.png");
+  background-size: 120%;
+  background-position: 0% 25%;
+  padding-top: 1em; }
+
+#pic3 {
+  width: 100%;
+  height: 150px;
+  float: left;
+  box-sizing: border-box;
+  margin-right: 3px;
+  margin-bottom: 6px;
+  background: url("sk8er-1.png");
+  background-size: 104%;
+  background-position: 0% 67%;
+  padding-top: 1.5em; }
+
+#pic4 {
+  height: 98%;
+  box-sizing: border-box;
+  background: url("sk8er-2.png");
+  background-size: cover;
+  background-size: auto 100%;
+  background-position: 80% 0%;
+  padding-top: 3.5em; }
+
+/************************************************/
+section.levelContainer:nth-child(7) {
+  margin-top: 25px; }
+  section.levelContainer:nth-child(7) div.ulWIPE, section.levelContainer:nth-child(7) div#topImageWrapper {
+    background-color: white;
+    display: flex;
+    padding: 0 0.4rem;
+    box-sizing: border-box; }
+    section.levelContainer:nth-child(7) div.ulWIPE img, section.levelContainer:nth-child(7) div#topImageWrapper img {
+      justify-content: space-around;
+      flex: auto;
+      margin: 0.4rem; }
+
+/************************************************/
+section.levelContainer:nth-child(8) {
+  margin: 25px 0 75px 0; }
+  section.levelContainer:nth-child(8) div.ulWIPE, section.levelContainer:nth-child(8) div#topImageWrapper {
+    background-color: white;
+    padding: 1.5rem;
+    box-sizing: border-box; }
+  section.levelContainer:nth-child(8) .fa.fa-facebook {
+    background-color: #4e4e4e; }
+    section.levelContainer:nth-child(8) .fa.fa-facebook:hover {
+      background-color: #445897;
+      color: #fbfbfb; }
+  section.levelContainer:nth-child(8) .fa.fa-rss {
+    background-color: #adadad; }
+    section.levelContainer:nth-child(8) .fa.fa-rss:hover {
+      background-color: #CB8E31;
+      color: #fbfbfb; }
+  section.levelContainer:nth-child(8) .fa.fa-twitter {
+    background-color: #7b7b7b; }
+    section.levelContainer:nth-child(8) .fa.fa-twitter:hover {
+      background-color: #6A8DC7;
+      color: #fbfbfb; }
+  section.levelContainer:nth-child(8) .fa.fa-youtube {
+    background-color: #747474; }
+    section.levelContainer:nth-child(8) .fa.fa-youtube:hover {
+      background-color: #B1372D;
+      color: #fbfbfb; }
+
+#contactContainer {
+  display: inline-block;
+  width: 55%; }
+  #contactContainer h3 {
+    margin: 0 0 1rem 0;
+    font-family: Arial;
+    color: #4a4b46;
+    font-weight: normal; }
+  #contactContainer p {
+    font-family: Arial;
+    color: #727272;
+    font-size: 0.9rem; }
+  #contactContainer ul.ulWIPE, #contactContainer ul#topImageWrapper {
+    display: inline-block; }
+    #contactContainer ul.ulWIPE li, #contactContainer ul#topImageWrapper li {
+      display: inline-block; }
+
+#formContainer {
+  display: inline-block;
+  width: 44%;
+  vertical-align: top;
+  padding-left: 1rem;
+  box-sizing: border-box;
+  text-align: right; }
+  #formContainer form div {
+    padding-bottom: 0.5rem; }
+    #formContainer form div input, #formContainer form div textarea {
+      width: 100%;
+      border-left: 2.5px solid #8F9190;
+      border-top: 2.5px solid #8F9190;
+      border-bottom: 1px solid #8F9190;
+      border-right: 1px solid #8F9190; }
+    #formContainer form div input:nth-child(3) {
+      height: 3rem; }
+    #formContainer form div button {
+      background-color: #b4292e;
+      color: #fbfbfb;
+      border: none;
+      padding: 0.3rem 3rem; }
+
+/* #pic1:hover,#pic2:hover,#pic3:hover,#pic4:hover{
+  @extend.textPop;
+} */
+/* IT WORKS! */
+/*     div.leftCenter,div.rightCenter{
+
+}
+div.leftCenter{
+  background-color:blue;
+  float:left;
+  width:66.6%;
+}
+  div.pic1,div.pic2,div.pic3,div.rightCenter{
+    float:left;
+
+    a{
+      width:100%;
+      height:100%;
+      box-sizing: border-box;
+      border:2px solid \$whiteText;
+      @extend.underBorder;
+      display:block;
+    }
+  }
+  div.pic1,div.pic2,div.pic3{
+    height:49%;
+  }
+  div.pic1{
+    width:49%;
+  }
+  div.pic2{
+    width:49%;
+  }
+  div.pic3{
+    margin-top:3px;
+    width:98%;
+  }
+div.rightCenter{
+  background-color:purple;
+  float:left;
+  width:33.3%;
+
+}
+  }
+} */
+/* div{
+    display:flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width:50%;
+    margin:auto;
+    div{
+      flex-flow:row;
+      flex:auto;
+      box-sizing:border-box;
+      height:350px;
+    }
+    div:nth-child(1){
+      order:1;
+      width:60%;
+      flex-wrap: wrap;
+      margin:0 0;
+      div{
+        flex-flow:row;
+        flex:50% 50%;
+        width:50%;override in 3rd child
+
+        background-color:white;
+      }
+      div:nth-child(1){
+        order:1;
+        margin-right:3px;
+        height:45%;
+      }
+      div:nth-child(2){
+        order:2;
+        height:50%;
+      }
+      div:nth-child(3){
+        margin-top:3px;
+        order:3;
+        flex: 50% 100%;
+      }
+    }
+    div:nth-child(2){
+      order:2;
+      width:40%;
+
+    }
+  }
+}*/
+/* justify-content: space-between; */
+/*****************************
+starts @ XXXpx
+*****************************/
